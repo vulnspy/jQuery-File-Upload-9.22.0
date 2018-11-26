@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: php:7.2.2-apache
+    image: vsplate/php7-apache-ghostscript9.23:latest
     volumes:
       - ./docker-php.conf:/etc/apache2/conf-enabled/docker-php.conf
       - ./html:/var/www/html/
